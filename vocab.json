@@ -1,0 +1,45 @@
+type - states that a resource is an instance of a class
+subClassOf - states all instances of one class are instances of another
+
+DataType is an instance od class
+All instance of DataType are instance of Class ()
+
+Text is an instance of Class
+Text is an instance of DataType
+All instances of Text are also instances of DataType
+
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://www.schesign.com/datatype",
+      "@type": "rdfs:Class",
+      "rdfs:label": "DataType",
+      "rdfs:comment": "DataTypes such as Text, Numbers, and Dates",
+      "rdfs:subClassOf": {
+        "@id": "rdfs:Class"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/datatype/text",
+      "@type": [
+        "rdfs:Class",
+        "https://www.schesign.com/datatype"
+      ],
+      "rdfs:comment": "Data Type: Text",
+      "rdfs:label": "Text"
+    },
+    {
+      "@id": "https://www.schesign.com/datatype/url",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Data Type: Url",
+      "rdfs:label": "Url",
+      "rdfs:subClassOf": {
+        "@id": "https://www.schesign.com/datatype/text"
+      }
+    },
+  ]
+}
