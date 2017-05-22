@@ -1,11 +1,11 @@
 {
-  "name": "schesign-js-json-schema",
-  "version": "0.1.0",
+  "name": "schesign-js-json-ld",
+  "version": "0.1.1",
   "license": "MIT",
-  "description": "Generate a json schema from a schesign graph",
+  "description": "Generate a json ld graph from a schesign graph",
   "repository": {
     "type": "git",
-    "url": "https://github.com/csenn/schesign-js-json-schema.git"
+    "url": "https://github.com/csenn/schesign-js-json-ld.git"
   },
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
     "rimraf": "^2.5.2",
-    "schesign-graph-examples": "0.0.1",
+    "schesign-graph-examples": "0.0.12",
     "standard": "^10.0.2"
   },
   "dependencies": {}

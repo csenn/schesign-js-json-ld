@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:a0",
+      "@type": "rdfs:Class"
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class1",
+      "@type": "rdfs:Class",
+      "rdf:label": "class1"
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class2",
+      "@type": "rdfs:Class",
+      "rdf:label": "class2"
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class3",
+      "@type": "rdfs:Class",
+      "rdf:label": "class3"
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/class/class3",
+      "@type": "rdfs:Class",
+      "rdf:label": "class3"
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/class/class4",
+      "@type": "rdfs:Class",
+      "rdf:label": "class4"
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/property/a",
+      "@type": "rdf:Property",
+      "rdf:label": "a",
+      "rdfs:range": {
+        "@id": "o/tests/linked_nodes_1/0.1.0/class/class1"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class1"
+        },
+        {
+          "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class2"
+        },
+        {
+          "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/class/class3"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/property/b",
+      "@type": "rdf:Property",
+      "rdf:label": "b",
+      "rdfs:range": {
+        "@id": "_:a0"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class1"
+        },
+        {
+          "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/class/class3"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/property/c",
+      "@type": "rdf:Property",
+      "rdf:label": "c",
+      "rdfs:range": {
+        "@id": "https://www.schesign.com/datatype/text"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class2"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/property/c",
+      "@type": "rdf:Property",
+      "rdf:label": "c",
+      "rdfs:range": {
+        "@id": "o/tests/linked_nodes_1/0.1.0/class/class1"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/class/class3"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/property/d",
+      "@type": "rdf:Property",
+      "rdf:label": "d",
+      "rdfs:range": {
+        "@id": "https://www.schesign.com/datatype/text"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/class/class3"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/property/d",
+      "@type": "rdf:Property",
+      "rdf:label": "d",
+      "rdfs:range": {
+        "@id": "o/tests/linked_nodes_2/master/class/class4"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/class/class3"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/property/e",
+      "@type": "rdf:Property",
+      "rdf:label": "e",
+      "rdfs:range": {
+        "@id": "o/tests/linked_nodes_1/0.1.0/class/class2"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/_:a0"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/linked_nodes_1/0.1.0/property/f",
+      "@type": "rdf:Property",
+      "rdf:label": "f",
+      "rdfs:range": {
+        "@id": "o/tests/linked_nodes_1/0.1.0/class/class3"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/linked_nodes_2/master/class/class4"
+      }
+    }
+  ]
+}

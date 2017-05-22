@@ -5,106 +5,139 @@
   },
   "@graph": [
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class1",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class1",
       "@type": "rdfs:Class",
       "rdf:label": "class1"
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class2",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class2",
       "@type": "rdfs:Class",
       "rdf:label": "class2",
       "rdfs:subClassOf": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class1"
+        "@id": "o/tests/inheritance_chain_1/0.1.0/class/class1"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class3",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class3",
       "@type": "rdfs:Class",
       "rdf:label": "class3",
       "rdfs:subClassOf": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class2"
+        "@id": "o/tests/inheritance_chain_1/0.1.0/class/class2"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_2/master/class/class4",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/class/class4",
       "@type": "rdfs:Class",
       "rdf:label": "class4",
       "rdfs:subClassOf": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class3"
+        "@id": "o/tests/inheritance_chain_1/0.1.0/class/class3"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_2/master/class/class5",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/class/class5",
       "@type": "rdfs:Class",
       "rdf:label": "class5",
       "rdfs:subClassOf": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_2/master/class/class4"
+        "@id": "o/tests/inheritance_chain_2/master/class/class4"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/property/a",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/property/a",
       "@type": "rdf:Property",
       "rdf:label": "a",
       "rdfs:range": {
-        "@id": "https://www.schesign.com/DataType/Text"
+        "@id": "https://www.schesign.com/datatype/text"
       },
       "rdfs:domain": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class1"
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class1"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/property/a1",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/property/a",
+      "@type": "rdf:Property",
+      "rdf:label": "a",
+      "rdfs:range": {
+        "@id": "https://www.schesign.com/datatype/boolean"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/class/class4"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/property/a1",
       "@type": "rdf:Property",
       "rdf:label": "a1",
       "rdfs:range": {
-        "@id": "https://www.schesign.com/DataType/Text"
+        "@id": "https://www.schesign.com/datatype/text"
       },
       "rdfs:domain": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class1"
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class1"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/property/b",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/property/a2",
+      "@type": "rdf:Property",
+      "rdf:label": "a2",
+      "rdfs:range": {
+        "@id": "https://www.schesign.com/datatype/text"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class1"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/property/a3",
+      "@type": "rdf:Property",
+      "rdf:label": "a3",
+      "rdfs:range": {
+        "@id": "https://www.schesign.com/datatype/text"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class1"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/property/b",
       "@type": "rdf:Property",
       "rdf:label": "b",
       "rdfs:range": {
-        "@id": "https://www.schesign.com/DataType/Text"
+        "@id": "https://www.schesign.com/datatype/text"
       },
       "rdfs:domain": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class2"
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class2"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/property/c",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/property/c",
       "@type": "rdf:Property",
       "rdf:label": "c",
       "rdfs:range": {
-        "@id": "https://www.schesign.com/DataType/Text"
+        "@id": "https://www.schesign.com/datatype/text"
       },
       "rdfs:domain": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_1/master/class/class3"
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_1/0.1.0/class/class3"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_2/master/property/d",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/property/d",
       "@type": "rdf:Property",
       "rdf:label": "d",
       "rdfs:range": {
-        "@id": "https://www.schesign.com/DataType/Text"
+        "@id": "https://www.schesign.com/datatype/text"
       },
       "rdfs:domain": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_2/master/class/class4"
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/class/class4"
       }
     },
     {
-      "@id": "https://www.schesign.com/u/csenn/test_inheritance_2/master/property/e",
+      "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/property/e",
       "@type": "rdf:Property",
       "rdf:label": "e",
       "rdfs:range": {
-        "@id": "https://www.schesign.com/DataType/Text"
+        "@id": "https://www.schesign.com/datatype/text"
       },
       "rdfs:domain": {
-        "@id": "https://www.schesign.com/u/csenn/test_inheritance_2/master/class/class5"
+        "@id": "https://www.schesign.com/o/tests/inheritance_chain_2/master/class/class5"
       }
     }
   ]

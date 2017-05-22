@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://www.schesign.com/o/tests/basic/master/class/class_a",
+      "@type": "rdfs:Class",
+      "rdf:label": "class_a",
+      "rdfs:comment": "First Description"
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/basic/master/property/property_a",
+      "@type": "rdf:Property",
+      "rdf:label": "property_a",
+      "rdfs:range": {
+        "@id": "https://www.schesign.com/datatype/text"
+      },
+      "rdfs:domain": {
+        "@id": "https://www.schesign.com/o/tests/basic/master/class/class_a"
+      }
+    },
+    {
+      "@id": "https://www.schesign.com/o/tests/basic/master/property/property_b",
+      "@type": "rdf:Property",
+      "rdf:label": "property_b",
+      "rdfs:range": {
+        "@id": "https://www.schesign.com/datatype/boolean"
+      }
+    }
+  ]
+}
